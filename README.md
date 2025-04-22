@@ -12,7 +12,7 @@
 
 I’m a seasoned Senior Software Engineer and Software Architect with deep expertise in **Rust**, **Node.js**, and the **Web3 ecosystem**. I specialize in building scalable, resilient backend systems, decentralized apps, and smart contracts, with a strong foundation in **Domain-Driven Design (DDD)** and microservices architecture.
 
-Whether it's crafting L1 blockchains using **Substrate**, developing smart contracts on **Solana (Anchor)**, or building high-throughput backend APIs using **Actix-web**, I bring precision and performance to every line of code.
+Whether it's crafting L1 blockchains using **Substrate**, developing smart contracts on **Solana (Anchor)**, or building high-throughput backend APIs using **Actix-web** or **gRPC**, I bring precision and performance to every line of code.
 
 ---
 
