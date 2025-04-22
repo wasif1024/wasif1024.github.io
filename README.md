@@ -25,6 +25,7 @@ Whether it's crafting L1 blockchains using **Substrate**, developing smart contr
 #### 🧠 Blockchain & Web3
 - **L1**: Substrate (Polkadot)
 - **Smart Contracts**: Solana (Anchor), MetaPlex
+- **DA Layer**: Celestia
 - **Rollups**: Rollkit
 - **ZK**: Risc0
 - **dApp Development**, Wallet Integration, On-chain/Off-chain Workflows
@@ -63,8 +64,8 @@ Whether it's crafting L1 blockchains using **Substrate**, developing smart contr
 - 💼 [LinkedIn](https://www.linkedin.com/in/wasif-shah-13002799/)
 - 💻 [GitHub](https://github.com/wasif1024)
 - ✉️ Email: [wasif1024@gmail.com](mailto:wasif1024@gmail.com)
-- 🌍 Portfolio: [Magic Eden - Hoopas](https://magiceden.io/marketplace/thehoopas)
 - 📞 WhatsApp: +92-345-4767257
+- 📞 WhatsApp: +971-58-6899257
 
 ---
 
