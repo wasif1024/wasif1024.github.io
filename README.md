@@ -1,78 +1,73 @@
 # 👋 Hi, I'm Wasif Ul Islam Shah
 
-### 🚀 Senior Software Engineer | Blockchain Architect | Rust & Node.js Expert
+# 🧠 Senior Software Engineer & Software Architect
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=flat-square)](https://www.linkedin.com/in/wasif-shah-13002799/)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&style=flat-square)](https://github.com/wasif1024)
-[![Email](https://img.shields.io/badge/Email-me-informational?logo=gmail&style=flat-square)](mailto:wasif1024@gmail.com)
+Hi, I'm a Senior Software Engineer and Software Architect with deep expertise in building **scalable**, **high-performance backend systems** and **decentralized applications**. I specialize in **Rust** and **Node.js**, with advanced experience in **zero-knowledge cryptography**—including **zk-compression**, **zk-Rollups**, and **RISC Zero’s zkVM** for provable computation. I also leverage **Celestia** as a modular data availability layer to design scalable Layer 1 blockchain infrastructures.
 
 ---
 
-### 💼 About Me
+## 🧱 Architectural Philosophy
 
-I’m a seasoned Senior Software Engineer and Software Architect with deep expertise in **Rust**, **Node.js**, and the **Web3 ecosystem**. I specialize in building scalable, resilient backend systems, decentralized apps, and smart contracts, with a strong foundation in **Domain-Driven Design (DDD)** and microservices architecture.
+Grounded in **Domain-Driven Design (DDD)**, I build systems that are:
+- **Modular**
+- **Resilient**
+- **Horizontally Scalable**
 
-Whether it's crafting L1 blockchains using **Substrate**, developing smart contracts on **Solana (Anchor)**, or building high-throughput backend APIs using **Actix-web** or **gRPC**, I bring precision and performance to every line of code.
-
----
-
-### 🛠️ Tech Stack
-
-#### 💻 Backend & Languages
-- **Rust**, **Node.js**, **PHP**, **C#**, **TypeScript**
-- **Frameworks**: Actix-Web, Express.js, CodeIgniter, gRPC
-
-#### 🧠 Blockchain & Web3
-- **L1**: Substrate (Polkadot)
-- **Smart Contracts**: Solana (Anchor), MetaPlex
-- **DA Layer**: Celestia
-- **Rollups**: Rollkit
-- **ZK**: Risc0
-- **dApp Development**, Wallet Integration, On-chain/Off-chain Workflows
-
-#### 🧪 Databases & Messaging
-- PostgreSQL, MySQL, MongoDB, Redis
-- Apache Kafka, Firebase, Airtable
-
-#### 🎨 Frontend & Mobile
-- React.js, Angular, Ionic, jQuery
-
-#### ☁️ DevOps & Infrastructure
-- Docker, Kubernetes, AWS, Google Cloud
-- CI/CD: GitHub Actions, GitLab CI/CD, AWS CodePipeline
-
-#### 🔁 Orchestration
-- Temporal.io (durable workflows)
-
-#### 🔗 APIs & Integrations
-- Google, Discord, Telegram, Stripe, Cloudflare, Google Maps
+Whether it's Web2 microservices or cryptographically secure Web3 protocols, my focus is on future-proof, maintainable infrastructure.
 
 ---
 
-### 📈 Recent Projects
+## 🚀 Recent Work
 
-- **🟣 Siriux Blockchain** – L1 blockchain using Substrate with microservice backend, Kafka event stream, and AWS infrastructure.
-- **📲 Botim 4.0** – Real-time Rust-based backend with gRPC APIs for messaging, voice/video calls, and services.
-- **🎨 Designity NFT Platform** – Solana + MetaPlex smart contracts integrated with Node.js APIs and Airtable backend.
-- **🧩 Furlough NFT Generator** – Nouns-style NFT platform with dynamic trait combinations on Solana.
-- **🔐 OAuth Services** – Secure OAuth login flows using Rust for FifthTry.
+### 🪐 **Lead Rust/Substrate Engineer – [Siriux.ai](https://siriux.ai)**
+> Custom Layer 1 blockchain powered by Substrate
+
+- Designed and built **Siriux**, a scalable Substrate-based L1 blockchain
+- Architected microservices and backend APIs using **Rust + Actix-Web**
+- Integrated **Apache Kafka**, **PostgreSQL**, **Redis**, and **AWS services**
+- Delivered a modular architecture optimized for performance and extensibility
 
 ---
 
-### 📫 Let's Connect
+## 🔧 Core Expertise
 
+### 🏗️ Architecture & Scalability
+- Domain-Driven Design (DDD), Microservices, Event-Driven Architecture
+- Low-latency, fault-tolerant systems built for scale
+
+### 🔗 Backend & Blockchain Development
+- Proficient in **Rust**, **Node.js**
+- Experienced in **Polkadot**, **Solana**, smart contracts, DApps, and L1/L2 blockchain protocols
+
+### ⚙️ Event-Driven & Cloud-Native Infrastructure
+- Built reactive systems using **Apache Kafka**
+- Workflow orchestration with **Temporal.io**
+- Scalable deployments using **Kubernetes**, **AWS CodePipeline**, **GCP**
+
+### ☁️ Cloud & DevOps
+- Integrated APIs: CloudFlare, Gmail, Zapier, AtomData, Stripe, Facebook, Google
+- CI/CD and cloud-native operations on **AWS** and **GCP**
+
+---
+
+## 🧰 Highlight Projects
+
+| Project         | Tech Stack                                  | Description                                                 |
+|-----------------|---------------------------------------------|-------------------------------------------------------------|
+| **Siriux.ai**   | Rust, Substrate, Kafka, Actix-Web, AWS      | Substrate-based L1 blockchain with microservices backend    |
+| **Botim 4.0**   | Rust, gRPC, DDD                              | Real-time messaging backend using Rust microservices        |
+| **Rocky-Road API** | Rust, Actix-Web                            | Modular backend APIs in Rust for secure web services        |
+
+---
+
+## 📬 Contact
+
+- 🌍 Portfolio: *Coming Soon*
 - 💼 [LinkedIn](https://www.linkedin.com/in/wasif-shah-13002799/)
-- 💻 [GitHub](https://github.com/wasif1024)
-- ✉️ Email: [wasif1024@gmail.com](mailto:wasif1024@gmail.com)
+- 🐙 [GitHub](https://github.com/wasif1024)
+- ✉️ Email: wasif1024@gmail.com
 - 📞 WhatsApp: +92-345-4767257
 - 📞 WhatsApp: +971-58-6899257
 
 ---
 
-### 📊 GitHub Stats
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=wasif1024&show_icons=true&theme=radical)
-
----
-
-> “Great architecture isn’t just scalable — it tells a story. I write that story in Rust.” 🦀
