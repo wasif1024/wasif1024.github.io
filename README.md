@@ -1,73 +1,48 @@
 # 👋 Hi, I'm Wasif Ul Islam Shah
 
-# 🧠 Senior Software Engineer & Software Architect
+## 🧠 Senior Software Engineer, Technical Lead & Software Architect
 
-Hi, I'm a Senior Software Engineer and Software Architect with deep expertise in building **scalable**, **high-performance backend systems** and **decentralized applications**. I specialize in **Rust** and **Node.js**, with advanced experience in **zero-knowledge cryptography**—including **zk-compression**, **zk-Rollups**, and **RISC Zero’s zkVM** for provable computation. I also leverage **Celestia** as a modular data availability layer to design scalable Layer 1 blockchain infrastructures.
+I’m a hands-on **Technical Lead** and **Senior Software Engineer** with deep expertise in **Rust**, **Substrate**, **Solana**, and **Zero-Knowledge Proofs (ZKPs)**. I specialize in building **secure**, **scalable**, and **high-performance backend systems** that power decentralized applications, **zk-integrated infrastructure**, and **real-time microservices**.
+
+My engineering is grounded in **Domain-Driven Design (DDD)**, enabling me to architect modular, maintainable systems that adapt to complex product needs. I’ve delivered full-stack backend systems—from API design and microservices to blockchain integration and AI-powered workflows.
+
+---
+
+## 🔬 Recent Technical Focus
+
+Most recently, I’ve led the development of **zk-compression-based shielded transfers** using **Light Protocol** on **Solana**, enabling **privacy-first token transfers** backed by **zk-SNARKs** and **compressed Merkle commitments**. This work blends zero-knowledge cryptography with real-world financial logic in high-performance environments.
+
+Additionally, I’ve expanded into **AI-aligned project delivery**, with certifications in:
+- 🧠 Prompt Engineering  
+- 🧱 GenAI Data Infrastructure  
+- 📊 CPMAI™ (Cognitive Project Management for AI)
+
+These complement my backend and blockchain work, enabling me to lead initiatives at the intersection of **AI**, **Web3**, and enterprise systems.
 
 ---
 
 ## 🧱 Architectural Philosophy
 
-Grounded in **Domain-Driven Design (DDD)**, I build systems that are:
-- **Modular**
-- **Resilient**
-- **Horizontally Scalable**
+I design systems that are:
+- 🧩 **Modular** — separated by domain and responsibility  
+- 🔁 **Resilient** — designed for failure recovery and uptime  
+- 🚀 **Horizontally Scalable** — optimized for scale through architecture
 
-Whether it's Web2 microservices or cryptographically secure Web3 protocols, my focus is on future-proof, maintainable infrastructure.
+Whether it’s zk-integrated backends, AI-enhanced pipelines, or low-latency Web3 services, I focus on systems that are robust, future-ready, and grounded in clean code.
 
 ---
 
-## 🚀 Recent Work
+## 🚀 Featured Work
 
 ### 🪐 **Lead Rust/Substrate Engineer – [Siriux.ai](https://siriux.ai)**
-> Custom Layer 1 blockchain powered by Substrate
+> Substrate-powered Layer 1 blockchain
 
-- Designed and built **Siriux**, a scalable Substrate-based L1 blockchain
-- Architected microservices and backend APIs using **Rust + Actix-Web**
-- Integrated **Apache Kafka**, **PostgreSQL**, **Redis**, and **AWS services**
-- Delivered a modular architecture optimized for performance and extensibility
+- Designed and launched **Siriux**, a scalable L1 blockchain  
+- Developed modular backend services using **Rust + Actix-Web**  
+- Integrated **Apache Kafka**, **PostgreSQL**, **Redis**, and **AWS**  
+- Advocated **DDD** for long-term maintainability and extensibility  
 
----
+### 🧪 **zk-Compression & Shielded Transfers – Solana / Light Protocol**
+> zk-SNARK-powered privacy architecture
 
-## 🔧 Core Expertise
-
-### 🏗️ Architecture & Scalability
-- Domain-Driven Design (DDD), Microservices, Event-Driven Architecture
-- Low-latency, fault-tolerant systems built for scale
-
-### 🔗 Backend & Blockchain Development
-- Proficient in **Rust**, **Node.js**
-- Experienced in **Polkadot**, **Solana**, smart contracts, DApps, and L1/L2 blockchain protocols
-
-### ⚙️ Event-Driven & Cloud-Native Infrastructure
-- Built reactive systems using **Apache Kafka**
-- Workflow orchestration with **Temporal.io**
-- Scalable deployments using **Kubernetes**, **AWS CodePipeline**, **GCP**
-
-### ☁️ Cloud & DevOps
-- Integrated APIs: CloudFlare, Gmail, Zapier, AtomData, Stripe, Facebook, Google
-- CI/CD and cloud-native operations on **AWS** and **GCP**
-
----
-
-## 🧰 Highlight Projects
-
-| Project         | Tech Stack                                  | Description                                                 |
-|-----------------|---------------------------------------------|-------------------------------------------------------------|
-| **Siriux.ai**   | Rust, Substrate, Kafka, Actix-Web, AWS      | Substrate-based L1 blockchain with microservices backend    |
-| **Botim 4.0**   | Rust, gRPC, DDD                              | Real-time messaging backend using Rust microservices        |
-| **Rocky-Road API** | Rust, Actix-Web                            | Modular backend APIs in Rust for secure web services        |
-
----
-
-## 📬 Contact
-
-- 🌍 Portfolio: *Coming Soon*
-- 💼 [LinkedIn](https://www.linkedin.com/in/wasif-shah-13002799/)
-- 🐙 [GitHub](https://github.com/wasif1024)
-- ✉️ Email: wasif1024@gmail.com
-- 📞 WhatsApp: +92-345-4767257
-- 📞 WhatsApp: +971-58-6899257
-
----
-
+- Implemented **zk-compression** for privacy-pres
