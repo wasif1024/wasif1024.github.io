@@ -39,7 +39,7 @@ Whether it's zk-integrated backends, AI-enhanced pipelines, or low-latency Web3 
 
 - Leading **protocol development** for Fintradex, a cutting-edge derivatives trading platform
 - **Architecting Fintradex parachain** using **Substrate framework** for **cross-chain interoperability** and **scalable derivatives trading**
-- Implementing **ZK compression** and **Light Protocol** integration for **privacy-enhanced trading** and **efficient state management**
+- Implementing **RISC0-based zero-knowledge proofs** for **privacy-preserving order book matching** and **confidential trading**
 - Developing **smart contract architecture** for **derivatives trading**, **liquidity pools**, and **risk management systems**
 - Building **cross-chain bridges** and **parachain infrastructure** for seamless integration with the broader Polkadot ecosystem
 
@@ -64,10 +64,10 @@ Whether it's zk-integrated backends, AI-enhanced pipelines, or low-latency Web3 
 ## 🛠️ Core Technologies & Expertise
 
 ### **Blockchain & Web3**
+- **Substrate** - Custom blockchain development, pallet architecture, parachain infrastructure
 - **Solana** - High-performance blockchain development, ZK compression, Light Protocol
 - **Rust** - Systems programming, smart contracts, backend services
-- **Substrate** - Custom blockchain development, pallet architecture
-- **Zero-Knowledge Proofs** - zk-SNARKs, zk-STARKs, privacy protocols
+- **Zero-Knowledge Proofs** - RISC0, zk-SNARKs, zk-STARKs, privacy protocols
 
 ### **Backend & Infrastructure**
 - **Microservices** - Event-driven architectures, API design, service mesh
@@ -87,10 +87,8 @@ Whether it's zk-integrated backends, AI-enhanced pipelines, or low-latency Web3 
 I'm currently focused on **protocol engineering** at [Fintradex](https://fintradex.io/), where I'm building the next generation of **decentralized derivatives trading** infrastructure. My work combines:
 
 - **Substrate parachain development** for **cross-chain interoperability** and **scalable derivatives trading**
-- **Solana integration** for **high-performance** blockchain capabilities
-- **ZK compression** for efficient state management
-- **Light Protocol** for privacy-enhanced trading
-- **Advanced derivatives** smart contract architecture
+- **RISC0-based zero-knowledge proofs** for **privacy-preserving order book matching** and **confidential trading operations**
+- **Advanced derivatives** smart contract architecture and **risk management systems**
 
 This represents the cutting edge of **DeFi infrastructure**, combining **zero-knowledge cryptography** with **institutional-grade trading** systems and **cross-chain interoperability** through the Polkadot ecosystem.
 
