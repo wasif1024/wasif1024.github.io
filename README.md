@@ -16,10 +16,10 @@ Previously, I worked on large-scale real-time messaging systems at Botim, buildi
 
 ## 🔬 Recent Technical Focus
 
+- Building **Solana DeFi protocols** including **CDP stablecoins**, **asset exchanges**, and **token vesting systems**.
 - Currently leading architecture and protocol development of **FintraDex**, a next-generation **orderbook DEX** on Substrate/Polkadot, integrating **Risc0 zkVM** for trustless, zero-knowledge off-chain order matching and verifiable settlement.
 - Implementing **ISMP + Hyperbridge** interoperability for cross-chain trading across Substrate, Solana, and EVM.
 - Delivered production Solana applications using **compressed NFTs (cNFTs)**, including minting flows, on-chain metadata handling, and cost-efficient asset management.
-- Built **Solana DeFi protocols** including CDP stablecoins, asset exchanges, and token vesting systems.
 
 ---
 
@@ -35,9 +35,11 @@ Previously, I worked on large-scale real-time messaging systems at Botim, buildi
 ---
 
 ### 🏦 **The Compound – [thecompound.cc](https://thecompound.cc/)**
-> Decentralized finance platform
+> Production Solana application with compressed NFTs
 
-- [Add project details here]
+- Delivered a **production Solana application** using **compressed NFTs (cNFTs)**, including minting flows, on-chain metadata handling, and cost-efficient asset management.
+- Leveraged **Solana compression primitives** to enable scalable, cost-effective NFT minting and management at scale.
+- Implemented comprehensive **minting workflows** and **on-chain metadata handling** for efficient asset lifecycle management.
 
 ---
 
