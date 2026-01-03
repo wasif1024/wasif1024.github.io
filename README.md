@@ -16,7 +16,7 @@ Previously, I worked on large-scale real-time messaging systems at Botim, buildi
 
 ## 🔬 Recent Technical Focus
 
-- Building **Solana DeFi protocols** including **CDP stablecoins**, **asset exchanges**, and **token vesting systems**.
+- Building **Solana DeFi protocols** including **CDP stablecoins**, **lending protocols**, **asset exchanges**, and **token vesting systems**.
 - Currently leading architecture and protocol development of **FintraDex**, a next-generation **orderbook DEX** on Substrate/Polkadot, integrating **Risc0 zkVM** for trustless, zero-knowledge off-chain order matching and verifiable settlement.
 - Implementing **ISMP + Hyperbridge** interoperability for cross-chain trading across Substrate, Solana, and EVM.
 - Delivered production Solana applications using **compressed NFTs (cNFTs)**, including minting flows, on-chain metadata handling, and cost-efficient asset management.
@@ -56,6 +56,18 @@ Previously, I worked on large-scale real-time messaging systems at Botim, buildi
 - Implemented **overcollateralization system** (200% default) with configurable liquidation threshold (50%) and minimum health factor validation.
 - Core instructions include: deposit & mint, redeem & withdraw, liquidation, and admin configuration management.
 - Comprehensive error handling for price validation, health factor checks, and protocol safety enforcement.
+
+#### **WS Lending — Solana Decentralized Lending Protocol**  
+> [GitHub Repository](https://github.com/wasif1024/ws-lending) | Production-ready lending protocol with share-based accounting
+
+- Designed and implemented a **production-ready decentralized lending protocol** on Solana using **Rust + Anchor 0.30.1**.
+- Built sophisticated **share-based accounting system** enabling efficient interest accrual without constant on-chain updates, using continuous compounding with exponential growth.
+- Supports **dual asset lending** (SOL and USDC) with deposits, withdrawals, borrowing, and repayment flows.
+- Integrated **Pyth Network oracle** for real-time price feeds with staleness checks, enabling accurate collateral valuation and liquidation calculations.
+- Implemented **automated liquidation mechanisms** with health factor monitoring, close factor calculations, and liquidation bonus incentives.
+- Features **PDA-based treasury accounts** for secure token management and automated interest accrual on deposits and borrows.
+- Core instructions include: deposit, withdraw, borrow, repay, and liquidate with comprehensive validation and error handling.
+- Interest accrues continuously using exponential compounding formula, ensuring fair and accurate interest calculations for both depositors and borrowers.
 
 #### **WS Swap — Solana Asset Exchange Prototype**  
 > [GitHub Repository](https://github.com/wasif1024/ws-swap) | Token swap protocol with PDA-secured vaults
@@ -106,7 +118,7 @@ Previously, I worked on large-scale real-time messaging systems at Botim, buildi
 - **Interoperability**: ISMP + Hyperbridge
 - **Zero-Knowledge Proofs**: Risc0 zkVM, zk-SNARKs, Pinocchio
 - **Confidential Computing**: Arcium MPC
-- **DeFi Protocols**: CDP stablecoins, oracle integration, liquidation mechanisms
+- **DeFi Protocols**: CDP stablecoins, lending protocols, asset exchanges, oracle integration, liquidation mechanisms
 
 ### **Backend & Infrastructure**
 - **Rust**: Tokio, Actix-Web, Subxt, gRPC
