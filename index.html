@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wasif Ul Islam Shah · AI Solutions Architect</title>
+<meta name="description" content="Senior AI Solutions Architect: agentic AI, Azure AI, Python and Rust. Builder of FacilityOps AI and the agentic infrastructure behind myndlab.ai.">
+<meta property="og:title" content="Wasif Ul Islam Shah · AI Solutions Architect">
+<meta property="og:description" content="Production agentic AI with guardrails, evaluation and human-in-the-loop control.">
+<meta property="og:image" content="https://wasif1024.github.io/assets/profile.jpg">
+<link rel="icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f4eee4;
+    --surface: #fbf8f2;
+    --fg: #29251f;
+    --muted: #6c6458;
+    --border: #ddd3c3;
+    --accent: #1f6f64;
+    --accent-soft: #dbe9e4;
+    --warm: #a2673d;
+    --shadow: 0 1px 2px rgba(41, 37, 31, .06), 0 8px 24px rgba(41, 37, 31, .06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #151311;
+      --surface: #1e1b18;
+      --fg: #ede6da;
+      --muted: #a39a8c;
+      --border: #35302a;
+      --accent: #5bb8a8;
+      --accent-soft: #1c302c;
+      --warm: #d29a6a;
+      --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #151311;
+    --surface: #1e1b18;
+    --fg: #ede6da;
+    --muted: #a39a8c;
+    --border: #35302a;
+    --accent: #5bb8a8;
+    --accent-soft: #1c302c;
+    --warm: #d29a6a;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+  @media (min-width: 720px) { .wrap { padding: 0 32px; } }
+
+  .mono, .eyebrow, .tag, nav .brand {
+    font-family: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  }
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--warm);
+    margin: 0;
+  }
+  h1, h2, h3 { font-family: "Fraunces", Georgia, serif; font-weight: 600; letter-spacing: -.01em; line-height: 1.15; margin: 0; }
+  h2 { font-size: clamp(28px, 4vw, 38px); margin-top: 10px; }
+  h3 { font-size: 22px; }
+  p { margin: 0; }
+
+  /* Nav */
+  header.top {
+    position: sticky; top: 0; z-index: 40;
+    background: color-mix(in srgb, var(--bg) 82%, transparent);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+  nav { display: flex; align-items: center; justify-content: space-between; height: 58px; gap: 16px; }
+  nav .brand { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; text-decoration: none; white-space: nowrap; }
+  nav ul { display: none; list-style: none; margin: 0; padding: 0; gap: 24px; }
+  nav ul a { text-decoration: none; font-size: 14px; color: var(--muted); transition: color .15s; }
+  nav ul a:hover { color: var(--fg); }
+  @media (min-width: 820px) { nav ul { display: flex; } }
+  .theme-btn {
+    border: 1px solid var(--border); background: var(--surface); color: var(--fg);
+    width: 36px; height: 36px; border-radius: 999px; cursor: pointer;
+    display: grid; place-items: center;
+  }
+  .theme-btn svg { width: 16px; height: 16px; }
+
+  /* Hero */
+  .hero { padding: 56px 0 48px; border-bottom: 1px solid var(--border); position: relative; overflow: hidden; }
+  .hero::before {
+    content: ""; position: absolute; inset: 0; z-index: -1; opacity: .5;
+    background-image: radial-gradient(var(--border) 1px, transparent 1px);
+    background-size: 22px 22px;
+    mask-image: linear-gradient(to bottom, #000 30%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, #000 30%, transparent);
+  }
+  .hero-grid { display: grid; gap: 40px; align-items: center; }
+  @media (min-width: 860px) { .hero-grid { grid-template-columns: 1fr 300px; gap: 56px; } }
+  .hero h1 { font-size: clamp(38px, 6.4vw, 64px); margin-top: 14px; }
+  .hero .lead { margin-top: 20px; font-size: clamp(17px, 2vw, 20px); color: var(--muted); max-width: 640px; }
+  .hero .lead strong { color: var(--fg); font-weight: 500; }
+  .actions { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 18px; border-radius: 999px; font-size: 14px; font-weight: 500;
+    text-decoration: none; border: 1px solid var(--border); background: var(--surface);
+    transition: transform .15s, border-color .15s;
+  }
+  .btn:hover { transform: translateY(-1px); border-color: var(--fg); }
+  .btn.primary { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+  .btn svg { width: 15px; height: 15px; }
+  .portrait {
+    position: relative; max-width: 300px; margin: 0 auto;
+  }
+  .portrait img {
+    border-radius: 20px; aspect-ratio: 1; object-fit: cover; width: 100%;
+    border: 1px solid var(--border); box-shadow: var(--shadow);
+  }
+  .portrait .badge {
+    position: absolute; left: -12px; bottom: 18px;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 8px 12px; font-size: 12px; box-shadow: var(--shadow);
+    display: flex; align-items: center; gap: 8px;
+  }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
+  .stats { margin-top: 44px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
+  @media (min-width: 720px) { .stats { grid-template-columns: repeat(4, 1fr); } }
+  .stat { background: var(--surface); padding: 18px 20px; }
+  .stat b { display: block; font-family: "Fraunces", Georgia, serif; font-size: 28px; font-weight: 600; }
+  .stat span { font-size: 13px; color: var(--muted); }
+
+  /* Sections */
+  section.block { padding: 72px 0; border-bottom: 1px solid var(--border); }
+  .section-head { margin-bottom: 36px; max-width: 680px; }
+  .section-head p.sub { margin-top: 12px; color: var(--muted); }
+
+  .diamonds { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; max-width: 760px; }
+  .diamonds li { position: relative; padding-left: 26px; }
+  .diamonds li::before { content: "◆"; position: absolute; left: 0; top: 1px; color: var(--warm); font-size: 11px; }
+
+  /* Cards */
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 18px; box-shadow: var(--shadow); overflow: hidden; }
+  .card + .card { margin-top: 28px; }
+  .card-media { border-bottom: 1px solid var(--border); background: var(--bg); }
+  .card-media img { width: 100%; }
+  .card-body { padding: 24px; }
+  @media (min-width: 720px) { .card-body { padding: 32px; } }
+  .card-top { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 16px; }
+  .card-top a.repo { font-size: 14px; color: var(--accent); text-decoration: none; font-weight: 500; }
+  .card-top a.repo:hover { text-decoration: underline; }
+  .card .tagline { margin-top: 8px; color: var(--muted); }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 20px; }
+  .tag { font-size: 12px; padding: 4px 10px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
+  .caption { font-size: 13px; color: var(--muted); padding: 10px 24px; border-bottom: 1px solid var(--border); }
+  @media (min-width: 720px) { .caption { padding: 10px 32px; } }
+
+  /* Case-study tabs */
+  .tabs { margin-top: 24px; }
+  .tablist { display: flex; gap: 4px; border-bottom: 1px solid var(--border); overflow-x: auto; }
+  .tablist button {
+    font: 500 13px "JetBrains Mono", ui-monospace, monospace; letter-spacing: .08em; text-transform: uppercase;
+    background: none; border: 0; color: var(--muted); cursor: pointer;
+    padding: 10px 14px; border-bottom: 2px solid transparent; margin-bottom: -1px; white-space: nowrap;
+  }
+  .tablist button[aria-selected="true"] { color: var(--fg); border-bottom-color: var(--warm); }
+  .tabpanel { padding-top: 20px; }
+  .tabpanel[hidden] { display: none; }
+  .tabpanel ul { margin: 0; padding-left: 20px; display: grid; gap: 8px; }
+  .metrics { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 18px; }
+  @media (min-width: 720px) { .metrics { grid-template-columns: repeat(4, 1fr); } }
+  .metric { border: 1px solid var(--border); border-radius: 12px; padding: 14px; background: var(--bg); }
+  .metric b { font-family: "Fraunces", Georgia, serif; font-size: 26px; color: var(--accent); display: block; }
+  .metric span { font-size: 13px; color: var(--muted); }
+  .bullets { margin: 20px 0 0; padding-left: 20px; display: grid; gap: 8px; }
+
+  /* Experience timeline */
+  .timeline { list-style: none; margin: 0; padding: 0; border-left: 1px solid var(--border); }
+  .timeline > li { position: relative; padding: 0 0 36px 28px; }
+  .timeline > li:last-child { padding-bottom: 0; }
+  .timeline > li::before {
+    content: ""; position: absolute; left: -6px; top: 8px; width: 11px; height: 11px; border-radius: 50%;
+    background: var(--bg); border: 2px solid var(--warm);
+  }
+  .timeline > li.current::before { background: var(--warm); }
+  .role-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; align-items: baseline; }
+  .role-head h3 { font-size: 20px; }
+  .when { font-size: 13px; color: var(--muted); font-family: "JetBrains Mono", ui-monospace, monospace; }
+  .org { color: var(--accent); font-weight: 500; margin-top: 2px; }
+  .timeline ul { margin: 10px 0 0; padding-left: 20px; display: grid; gap: 6px; color: var(--fg); }
+  .timeline .note { margin-top: 6px; color: var(--muted); font-size: 15px; }
+
+  /* Grids */
+  .grid { display: grid; gap: 16px; }
+  @media (min-width: 720px) { .grid.two { grid-template-columns: repeat(2, 1fr); } }
+  .tile { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 20px; }
+  .tile h3 { font-size: 18px; }
+  .tile p { margin-top: 6px; color: var(--muted); font-size: 15px; }
+  .tile a { text-decoration: none; }
+  .tile a:hover h3 { color: var(--accent); }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+  .chips span { font-size: 13px; padding: 4px 10px; border: 1px solid var(--border); border-radius: 999px; background: var(--bg); }
+
+  /* Approach accordion */
+  details { border-top: 1px solid var(--border); padding: 18px 0; }
+  details:last-of-type { border-bottom: 1px solid var(--border); }
+  summary {
+    list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px;
+    font-family: "Fraunces", Georgia, serif; font-size: 20px; font-weight: 600;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; font-family: "JetBrains Mono", monospace; color: var(--warm); font-size: 20px; transition: transform .2s; }
+  details[open] summary::after { transform: rotate(45deg); }
+  details p { margin-top: 10px; color: var(--muted); max-width: 720px; }
+
+  .certs { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .certs li { display: flex; justify-content: space-between; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+  .certs li span { color: var(--muted); font-size: 14px; }
+
+  /* Contact */
+  .contact { padding: 80px 0; text-align: center; }
+  .contact h2 { font-size: clamp(30px, 5vw, 46px); }
+  .contact p.sub { margin: 14px auto 0; color: var(--muted); max-width: 560px; }
+  .contact .actions { justify-content: center; }
+  footer { border-top: 1px solid var(--border); padding: 24px 0; font-size: 13px; color: var(--muted); }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; }
+</style>
+<script>
+  try {
+    var t = localStorage.getItem("theme");
+    if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+  } catch (e) {}
+</script>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <nav aria-label="Main">
+      <a class="brand" href="#top">Wasif Shah</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle dark mode">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">AI Solutions Architect · Portfolio 2026</p>
+          <h1>Wasif Ul Islam Shah</h1>
+          <p class="lead">
+            I design <strong>production agentic AI</strong> that enterprises can trust: guardrails, evaluation gates,
+            PII protection and <strong>people in control</strong> of anything that matters. Backed by
+            15+ years of backend engineering in <strong>Python and Rust</strong>.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="#projects">
+              View projects
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a class="btn" href="mailto:wasif1024@gmail.com">Get in touch</a>
+            <a class="btn" href="https://github.com/wasif1024" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/wasif-shah-13002799/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+        <div class="portrait">
+          <img src="assets/profile.jpg" alt="Portrait of Wasif Ul Islam Shah" width="400" height="400">
+          <div class="badge"><span class="dot"></span>PMP® · PMI-CPMAI™</div>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><b>15+</b><span>years in backend engineering</span></div>
+        <div class="stat"><b>4+</b><span>years of Rust &amp; distributed systems</span></div>
+        <div class="stat"><b>10+</b><span>app stacks generated by myndlab.ai</span></div>
+        <div class="stat"><b>1.00</b><span>emergency recall in FacilityOps evals</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">01 · About</p>
+        <h2>Who I am</h2>
+      </div>
+      <ul class="diamonds">
+        <li>AI Solutions Architect with 15+ years in backend engineering, including 4+ years building Rust and distributed systems, and a recent focus on production agentic AI.</li>
+        <li>Sole architect of the agentic infrastructure behind <a href="https://myndlab.ai" target="_blank" rel="noopener">myndlab.ai</a>, which turns a natural-language prompt into a production-grade, containerized full-stack or mobile app.</li>
+        <li>Builder of FacilityOps AI, an open-source enterprise agentic system on Microsoft Foundry with guardrails, PII protection, evaluation gates and human-in-the-loop control.</li>
+        <li>PMP® and PMI-CPMAI™ certified: I bring structured delivery and AI governance to enterprise AI initiatives.</li>
+        <li>Strong blockchain background across Solana and Substrate, from Anchor programs to Subxt integrations.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">02 · Selected work</p>
+        <h2>Featured AI projects</h2>
+        <p class="sub">Open-source systems that show how I build agentic AI for real organisations: safe by design, measured, and with people approving what the AI proposes.</p>
+      </div>
+
+      <article class="card">
+        <div class="card-media">
+          <img src="https://raw.githubusercontent.com/wasif1024/facilityops/main/docs/images/demo.gif" loading="lazy" alt="FacilityOps AI demo: a tenant's request is redacted, checked and classified into a work order; a facility manager reviews a cited AI incident plan, approval is blocked by an expired gas permit, and the decision trail shows every check, model call and decision.">
+        </div>
+        <p class="caption">70-second walkthrough of the running app (synthetic data).</p>
+        <div class="card-body">
+          <div class="card-top">
+            <h3>FacilityOps AI</h3>
+            <a class="repo" href="https://github.com/wasif1024/facilityops" target="_blank" rel="noopener">github.com/wasif1024/facilityops →</a>
+          </div>
+          <p class="tagline">Enterprise agentic AI on Microsoft Foundry for facility maintenance intake, with deterministic safety controls, PII protection and human-in-the-loop workflows.</p>
+
+          <div class="tabs" data-tabs>
+            <div class="tablist" role="tablist" aria-label="FacilityOps case study">
+              <button role="tab" aria-selected="true" aria-controls="fo-s" id="fo-s-tab">Situation</button>
+              <button role="tab" aria-selected="false" aria-controls="fo-t" id="fo-t-tab" tabindex="-1">Task</button>
+              <button role="tab" aria-selected="false" aria-controls="fo-a" id="fo-a-tab" tabindex="-1">Action</button>
+              <button role="tab" aria-selected="false" aria-controls="fo-r" id="fo-r-tab" tabindex="-1">Result</button>
+            </div>
+            <div class="tabpanel" role="tabpanel" id="fo-s" aria-labelledby="fo-s-tab">
+              <p>Tenants report maintenance problems by text, photo, voice note or scanned document, in several languages. Some are emergencies (gas, fire, flooding) and some contain personal data or hidden prompt injections. An AI that misroutes an emergency or leaks data is worse than no AI at all.</p>
+            </div>
+            <div class="tabpanel" role="tabpanel" id="fo-t" aria-labelledby="fo-t-tab" hidden>
+              <ul>
+                <li>Triage every request quickly and accurately, in English, Spanish and French.</li>
+                <li>Never let AI delay or decide an emergency.</li>
+                <li>Keep personal data away from models and logs, and keep people in charge of risky or expensive actions.</li>
+                <li>Prove quality with measurable gates, not demos.</li>
+              </ul>
+            </div>
+            <div class="tabpanel" role="tabpanel" id="fo-a" aria-labelledby="fo-a-tab" hidden>
+              <ul>
+                <li>Built a <strong>multimodal intake</strong> on Microsoft Foundry and Microsoft Agent Framework using Azure OpenAI, AI Vision, Speech, Document Intelligence and Translator.</li>
+                <li>Designed a <strong>deterministic pipeline</strong> with a single classifier agent and an emergency bypass before any AI.</li>
+                <li>Escalated incidents go to a <strong>Magentic multi-agent team</strong> (manager plus six specialists with read-only tools and a Foundry IQ knowledge base) that proposes cited plans for facility-manager approval before the application acts.</li>
+                <li>Added <strong>guardrails</strong> (Content Safety, Prompt Shields against direct and in-document injection), PII redaction before any model or log, Entra ID / External ID with deny-by-default RBAC, and append-only audit trails.</li>
+                <li>Defined the Azure deployment in <strong>Bicep</strong> (Container Apps, Key Vault, PostgreSQL, Service Bus, monitoring) with managed identity and no API keys.</li>
+              </ul>
+            </div>
+            <div class="tabpanel" role="tabpanel" id="fo-r" aria-labelledby="fo-r-tab" hidden>
+              <div class="metrics">
+                <div class="metric"><b>1.00</b><span>Emergency recall</span></div>
+                <div class="metric"><b>0.91</b><span>Category accuracy</span></div>
+                <div class="metric"><b>1.00</b><span>Prompt-injection resistance</span></div>
+                <div class="metric"><b>1.00</b><span>Counterfactual fairness</span></div>
+              </div>
+              <p>Measured on 108 golden cases plus an 84-case emergency holdout set, with automated quality gates running in CI on every pull request.</p>
+            </div>
+          </div>
+
+          <div class="tags">
+            <span class="tag">Microsoft Foundry</span><span class="tag">Agent Framework</span><span class="tag">Azure OpenAI</span>
+            <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Connect RPC</span><span class="tag">PostgreSQL</span>
+            <span class="tag">React</span><span class="tag">OpenTelemetry</span><span class="tag">Bicep</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media">
+          <img src="https://raw.githubusercontent.com/wasif1024/Deep-Sales-Assistant/main/docs/assets/how-it-works.svg" loading="lazy" alt="Animated diagram: the main agent starts a background newsletter agent with parallel genre researchers, while it writes and runs a chart script in its own LangSmith sandbox, then collects the finished newsletter.">
+        </div>
+        <p class="caption">The newsletter is researched in the background while the main agent keeps working in its sandbox.</p>
+        <div class="card-body">
+          <div class="card-top">
+            <h3>Deep Sales Assistant</h3>
+            <a class="repo" href="https://github.com/wasif1024/Deep-Sales-Assistant" target="_blank" rel="noopener">github.com/wasif1024/Deep-Sales-Assistant →</a>
+          </div>
+          <p class="tagline">A sandboxed AI sales agent built with LangChain Deep Agents, written as a step-by-step tutorial.</p>
+          <ul class="bullets">
+            <li>Reads quote requests from a sales rep's inbox, prices them from a real database, has the math double-checked and <strong>drafts the reply for human approval</strong>.</li>
+            <li><strong>Specialist subagents</strong>, each with its own tools, model and memory: a database analyst, an inbox manager over an <strong>MCP</strong> mail server, and a quote reviewer.</li>
+            <li><strong>Human-in-the-loop approvals</strong> for risky actions, and <strong>skills</strong> the agent loads on demand.</li>
+            <li>All generated code runs in a <strong>separate LangSmith sandbox per conversation</strong>; an async newsletter subagent fans out parallel researchers in the background.</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">LangGraph</span><span class="tag">Deep Agents</span><span class="tag">Claude API</span>
+            <span class="tag">MCP</span><span class="tag">LangSmith</span><span class="tag">Python</span><span class="tag">TypeScript</span>
+          </div>
+        </div>
+      </article>
+
+      <div style="margin-top: 40px;">
+        <p class="eyebrow">Also built · Solana DeFi protocols, 2025</p>
+        <div class="grid two" style="margin-top: 16px;">
+          <div class="tile"><a href="https://github.com/wasif1024/ws-lending" target="_blank" rel="noopener"><h3>WS Lending</h3></a><p>Over-collateralized lending protocol with interest accrual and liquidations.</p></div>
+          <div class="tile"><a href="https://github.com/wasif1024/ws-stablecoin" target="_blank" rel="noopener"><h3>WS Stablecoin</h3></a><p>SOL-backed CDP stablecoin with oracle-based health factors.</p></div>
+          <div class="tile"><a href="https://github.com/wasif1024/ws-swap" target="_blank" rel="noopener"><h3>WS Swap</h3></a><p>Token swap with PDA-secured vaults.</p></div>
+          <div class="tile"><h3>WS Vesting</h3><p>PDA-based vesting with cliff logic on Token-2022.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">03 · Experience</p>
+        <h2>Where I've worked</h2>
+      </div>
+      <ol class="timeline">
+        <li class="current">
+          <div class="role-head"><h3>AI Solutions Architect / Agentic AI Architect</h3><span class="when">Jan 2026 – Oct 2026</span></div>
+          <p class="org">Permus Software House (myndlab.ai) · Dubai</p>
+          <p class="note">Myndlab turns a natural-language prompt into a production-grade, containerized full-stack or mobile app across 10+ technology stacks, with native Arabic support.</p>
+          <ul>
+            <li>Sole architect and engineer for the agentic AI infrastructure, from design through production, using Rust, RIG, LLM orchestration and cloud-native services.</li>
+            <li>Designed graph-driven, durable workflows for deterministic, auditable and resumable AI execution.</li>
+            <li>Built MCP-compatible execution infrastructure for controlled tool invocation, with explicit state transitions, runtime enforcement and secure execution boundaries.</li>
+            <li>Architected agent memory and retrieval pipelines using vector databases and contextual execution.</li>
+            <li>Designed orchestration layers covering code generation, execution, validation and deployment automation.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="role-head"><h3>Senior Rust Engineer (Contract)</h3><span class="when">Feb 2025 – Aug 2025</span></div>
+          <p class="org">Astra Tech (Botim Messaging Platform) · Dubai</p>
+          <ul>
+            <li>Designed high-throughput Rust and gRPC services for Botim's large-scale real-time messaging infrastructure.</li>
+            <li>Built event-driven pipelines for presence, coordination and messaging; improved performance and fault tolerance.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="role-head"><h3>Senior Rust Engineer</h3><span class="when">Apr 2023 – Feb 2025</span></div>
+          <p class="org">Taif Ul Jaud (Consulting &amp; Product Development)</p>
+          <ul>
+            <li>Led a team of 10, owning architecture, planning and delivery of Rust backend and Solana systems for international clients.</li>
+            <li>Designity: shipped an Anchor-based Solana program for tamper-evident reviews. Hoopas: built Metaplex NFT contracts, launched on Magic Eden.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="role-head"><h3>Lead Rust Engineer</h3><span class="when">2022 – 2023</span></div>
+          <p class="org">Invo Technology · Remote</p>
+          <ul>
+            <li>Designed a scalable Rust microservices architecture with async Actix-Web APIs; integrated Subxt with Substrate networks.</li>
+            <li>Built Kafka- and Redis-based event pipelines on Docker and Kubernetes on AWS.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="role-head"><h3>Rust Engineer</h3><span class="when">2021 – 2022</span></div>
+          <p class="org">FifthTry · Remote</p>
+          <ul><li>Built Rust (Actix-Web) backend services with OAuth authentication (Google, Discord, Telegram).</li></ul>
+        </li>
+        <li>
+          <div class="role-head"><h3>Web Application Development</h3><span class="when">2010 – 2021</span></div>
+          <p class="org">Intagent · Brainiacs Technologies</p>
+          <p class="note">Senior Web Application Developer at Intagent (2016–2021); Web Application Developer at Brainiacs Technologies (2010–2016).</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="block" id="approach">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">04 · Approach</p>
+        <h2>How I build AI systems</h2>
+      </div>
+      <details open>
+        <summary>Deterministic first, AI second</summary>
+        <p>Safety-critical paths run in plain code before any model is called. In FacilityOps, emergencies bypass the AI entirely, and the classifier only suggests; code decides the route.</p>
+      </details>
+      <details>
+        <summary>Agents propose, people approve</summary>
+        <p>Agents get read-only tools and fixed budgets. They produce cited plans; a person approves, revises or rejects them, and only then does the application act.</p>
+      </details>
+      <details>
+        <summary>Measure before you ship</summary>
+        <p>Golden sets, holdout sets, fairness and injection tests run as quality gates in CI, so a regression blocks the merge instead of reaching users.</p>
+      </details>
+      <details>
+        <summary>Secure and private by default</summary>
+        <p>PII is redacted before any model, log or trace. Access is deny-by-default with Entra ID, services use managed identity with no API keys, and every decision is audited.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="block" id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">05 · Toolkit</p>
+        <h2>Core skills</h2>
+      </div>
+      <div class="grid two">
+        <div class="tile">
+          <h3>AI &amp; Agentic AI</h3>
+          <div class="chips">
+            <span>Microsoft Foundry</span><span>Microsoft Agent Framework</span><span>Azure OpenAI</span><span>Content Safety &amp; Prompt Shields</span>
+            <span>Azure AI Vision, Speech, Document Intelligence, Translator</span><span>Azure AI Search</span><span>Magentic Orchestration</span>
+            <span>Semantic Kernel</span><span>LangGraph</span><span>LangChain</span><span>RIG</span><span>MCP</span><span>Claude API</span><span>RAG</span>
+            <span>Multi-Agent Systems</span><span>AI Evaluation</span><span>AI Guardrails</span><span>Responsible AI</span>
+          </div>
+        </div>
+        <div class="tile">
+          <h3>Backend &amp; Infrastructure</h3>
+          <div class="chips">
+            <span>Rust</span><span>Python</span><span>FastAPI</span><span>Tokio</span><span>Axum</span><span>Actix-Web</span><span>gRPC / Connect RPC</span>
+            <span>PostgreSQL</span><span>Redis</span><span>Temporal</span><span>Qdrant</span><span>Kafka</span><span>Microservices</span><span>Event-Driven Architecture</span>
+          </div>
+        </div>
+        <div class="tile">
+          <h3>Cloud &amp; DevOps</h3>
+          <div class="chips">
+            <span>Microsoft Azure</span><span>Microsoft Entra ID</span><span>Application Insights</span><span>AWS</span><span>Docker</span><span>Kubernetes</span>
+            <span>Bicep / IaC</span><span>GitHub Actions</span><span>CI/CD</span><span>OpenTelemetry</span>
+          </div>
+        </div>
+        <div class="tile">
+          <h3>Blockchain</h3>
+          <div class="chips">
+            <span>Solana</span><span>Anchor</span><span>Token-2022</span><span>Metaplex</span><span>Substrate</span><span>Polkadot SDK</span>
+            <span>Subxt</span><span>Risc0 zkVM</span><span>Cross-Chain Interoperability</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid two" style="margin-top: 48px; gap: 40px;">
+        <div>
+          <p class="eyebrow">Certifications</p>
+          <ul class="certs" style="margin-top: 12px;">
+            <li>Project Management Professional (PMP®) <span>PMI · 2026</span></li>
+            <li>Certified Professional in Managing AI (PMI-CPMAI™) <span>PMI · 2026</span></li>
+            <li>Investment Foundations® Certificate <span>CFA Institute</span></li>
+            <li>Polkadot Blockchain Academy (PBA-X) <span>Wave 5</span></li>
+            <li>Certified Solana Builder <span>HackQuest × Solana Foundation</span></li>
+          </ul>
+        </div>
+        <div>
+          <p class="eyebrow">Courses · Anthropic, 2026</p>
+          <ul class="certs" style="margin-top: 12px;">
+            <li>Claude with the Anthropic API</li>
+            <li>Introduction to Model Context Protocol (MCP)</li>
+            <li>Claude Code in Action</li>
+            <li>Introduction to Agent Skills</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <p class="eyebrow">06 · Contact</p>
+      <h2 style="margin-top: 12px;">Let's build something reliable</h2>
+      <p class="sub">Open to conversations about agentic AI architecture, enterprise AI on Azure, AI governance and production-grade backend systems. Based in Pakistan, working remotely.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:wasif1024@gmail.com">wasif1024@gmail.com</a>
+        <a class="btn" href="https://wa.me/923454767257" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn" href="https://www.linkedin.com/in/wasif-shah-13002799/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/wasif1024" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Wasif Ul Islam Shah</span>
+    <span>Updated October 2026</span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("themeBtn").addEventListener("click", function () {
+    var root = document.documentElement;
+    var current = root.getAttribute("data-theme") ||
+      (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    var next = current === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("theme", next); } catch (e) {}
+  });
+
+  document.querySelectorAll("[data-tabs]").forEach(function (box) {
+    var tabs = Array.prototype.slice.call(box.querySelectorAll('[role="tab"]'));
+    function select(tab) {
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute("aria-selected", on);
+        t.tabIndex = on ? 0 : -1;
+        document.getElementById(t.getAttribute("aria-controls")).hidden = !on;
+      });
+    }
+    tabs.forEach(function (tab, i) {
+      tab.addEventListener("click", function () { select(tab); });
+      tab.addEventListener("keydown", function (e) {
+        var d = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
+        if (!d) return;
+        var next = tabs[(i + d + tabs.length) % tabs.length];
+        select(next); next.focus();
+      });
+    });
+  });
+</script>
+</body>
+</html>
