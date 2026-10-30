@@ -1,138 +1,157 @@
+<p align="center">
+  <img src="assets/profile.jpg" width="180" alt="Wasif Ul Islam Shah">
+</p>
+
 # 👋 Hi, I'm Wasif Ul Islam Shah
 
-## 🧠 Protocol Engineer & Senior Software Engineer
+## 🧠 Senior AI Solutions Architect | Agentic AI | Azure AI | Python | Rust | PMI-CPMAI™ | PMP®
 
-I'm a **Protocol Engineer and Senior Software Engineer** with **4+ years of Rust** and **10+ years of backend experience**, specializing in **privacy-preserving and real-time systems**.
+I'm an **AI Solutions Architect** with **15+ years in backend engineering**, including **4+ years building Rust and distributed systems** and a recent focus on **production agentic AI**.
 
-I design high-performance blockchain infrastructure across **Solana and Substrate**, with hands-on expertise in protocol-level DeFi systems including **collateralized stablecoins (CDPs)**, **oracle-driven pricing**, **liquidation mechanisms**, **confidential execution**, **zero-knowledge systems**, and **cross-chain interoperability**.
+I architected the agentic infrastructure behind **[myndlab.ai](https://myndlab.ai)**, a prompt-to-full-stack app builder, and built **[FacilityOps AI](https://github.com/wasif1024/facilityops)**, an open-source enterprise agentic system on **Microsoft Foundry** with guardrails, PII protection, evaluation gates and human-in-the-loop control.
 
-My recent work focuses on **Decentralized Confidential Computing using Arcium MPC**, including encrypted input handling, confidential execution flows, and verifiable on-chain settlement for Solana programs.
-
-I complement my technical work with strong finance fundamentals, having completed the **CFA Institute Investment Foundations® Certificate**, covering market structure, risk, portfolio construction, and ethics—knowledge that directly informs protocol incentive design and execution models.
-
-Previously, I worked on large-scale real-time messaging systems at Botim, building low-latency, fault-tolerant backend services in Rust and gRPC.
+I'm **PMP®** and **PMI-CPMAI™** certified, bringing structured delivery and AI governance to enterprise AI initiatives, with a strong blockchain background across **Solana** and **Substrate**.
 
 ---
 
-## 🔬 Recent Technical Focus
+## 🤖 Featured AI Projects
 
-- Building **Solana DeFi protocols** including **CDP stablecoins**, **lending protocols**, **asset exchanges**, and **token vesting systems**.
-- Currently leading architecture and protocol development of **FintraDex**, a next-generation **orderbook DEX** on Substrate/Polkadot, integrating **Risc0 zkVM** for trustless, zero-knowledge off-chain order matching and verifiable settlement.
-- Implementing **ISMP + Hyperbridge** interoperability for cross-chain trading across Substrate, Solana, and EVM.
-- Delivered production Solana applications using **compressed NFTs (cNFTs)**, including minting flows, on-chain metadata handling, and cost-efficient asset management.
+### 🏢 **[FacilityOps AI](https://github.com/wasif1024/facilityops)** — Enterprise agentic AI on Microsoft Foundry
+> AI-powered facility maintenance intake combining agentic AI, deterministic safety controls, PII protection and human-in-the-loop workflows
 
----
+<p align="center">
+  <img src="https://raw.githubusercontent.com/wasif1024/facilityops/main/docs/images/demo.gif" width="100%" alt="FacilityOps AI demo: a tenant's request is redacted, checked and classified into a work order; a facility manager reviews a cited AI incident plan, approval is blocked by an expired gas permit, and the decision trail shows every check, model call and decision.">
+</p>
+<p align="center"><sub>70-second walkthrough of the running app (synthetic data).</sub></p>
 
-## 🚀 Featured Work
+- Built a **multimodal maintenance-intake system** (text, photo, voice, scanned documents in English, Spanish and French) on **Microsoft Foundry** and **Microsoft Agent Framework**, using Azure OpenAI, AI Vision, Speech, Document Intelligence and Translator.
+- Designed a **deterministic intake pipeline** with a single classifier agent and an **emergency bypass before any AI**; escalated incidents go to a **Magentic multi-agent team** (manager plus six specialist agents with read-only tools and a Foundry IQ knowledge base) that proposes **cited plans for facility-manager approval** before the application acts.
+- Implemented **guardrails** (Content Safety, Prompt Shields against direct and in-document injection), **PII redaction before any model or log**, Entra ID / External ID with **deny-by-default RBAC**, and append-only audit trails.
+- Built an **evaluation suite** of 108 golden cases plus an 84-case emergency holdout set, with automated quality gates in CI:
 
-### 🔐 **Senior Software Engineer – [FintraDex](https://fintradex.io/)**  
-> Next-generation **orderbook DEX** for decentralized finance
+  | Metric | Result |
+  |---|---|
+  | Emergency recall | **1.00** |
+  | Category accuracy | **0.91** |
+  | Prompt-injection resistance | **1.00** |
+  | Counterfactual fairness | **1.00** |
 
-- Leading **architecture and protocol development** of FintraDex, built on **Substrate/Polkadot**.
-- Integrating **Risc0 zkVM** for **trustless, zero-knowledge off-chain order matching** and verifiable settlement.
-- Actively implementing **ISMP + Hyperbridge** to enable **cross-chain interoperability** with Substrate, Solana, and EVM ecosystems.
-
----
-
-### 🏦 **The Compound – [thecompound.cc](https://thecompound.cc/)**
-> Production Solana application with compressed NFTs
-
-- Delivered a **production Solana application** using **compressed NFTs (cNFTs)**, including minting flows, on-chain metadata handling, and cost-efficient asset management.
-- Leveraged **Solana compression primitives** to enable scalable, cost-effective NFT minting and management at scale.
-- Implemented comprehensive **minting workflows** and **on-chain metadata handling** for efficient asset lifecycle management.
+- Defined the Azure deployment as code in **Bicep** (Container Apps, Key Vault, PostgreSQL, Service Bus, monitoring), using **managed identity and no API keys**.
+- **Stack:** Python, FastAPI, Connect RPC/protobuf, PostgreSQL, React/TypeScript, OpenTelemetry, Application Insights, Docker, GitHub Actions.
 
 ---
 
-### 💰 **Solana DeFi Engineering (Independent Protocol Builds)**
+### 💼 **[Deep Sales Assistant](https://github.com/wasif1024/Deep-Sales-Assistant)** — Sandboxed AI sales agent with LangChain Deep Agents
+> A step-by-step tutorial project for building a multi-agent sales assistant that runs every action inside its own cloud sandbox
 
-#### **WS Stablecoin — Solana CDP Stablecoin Protocol**  
-> [GitHub Repository](https://github.com/wasif1024/ws-stablecoin) | Solana-based stablecoin protocol with CDP system
+<p align="center">
+  <img src="https://raw.githubusercontent.com/wasif1024/Deep-Sales-Assistant/main/docs/assets/how-it-works.svg" width="100%" alt="Animated diagram: the main agent starts a background newsletter agent with parallel genre researchers, while it writes and runs a chart script in its own LangSmith sandbox, then collects the finished newsletter.">
+</p>
+<p align="center"><sub>The newsletter is researched in the background while the main agent keeps working in its sandbox.</sub></p>
 
-- Designed and implemented a **SOL-collateralized CDP stablecoin** on Solana using **Rust + Anchor 0.30.1**.
-- Integrated **Pyth Network oracles** (PriceUpdateV2) for real-time SOL/USD price feeds, enabling accurate collateral valuation and health factor calculations.
-- Implemented comprehensive **liquidation mechanisms** with automated health factor monitoring, liquidation bonus calculations (10% default), and debt repayment flows.
-- Built secure **PDA-based account architecture** for configuration, collateral tracking, and stablecoin mint management.
-- Features **Token-2022 support** with program-controlled mint authority and freeze capabilities.
-- Implemented **overcollateralization system** (200% default) with configurable liquidation threshold (50%) and minimum health factor validation.
-- Core instructions include: deposit & mint, redeem & withdraw, liquidation, and admin configuration management.
-- Comprehensive error handling for price validation, health factor checks, and protocol safety enforcement.
-
-#### **WS Lending — Solana Decentralized Lending Protocol**  
-> [GitHub Repository](https://github.com/wasif1024/ws-lending) | Production-ready lending protocol with share-based accounting
-
-- Designed and implemented a **production-ready decentralized lending protocol** on Solana using **Rust + Anchor 0.30.1**.
-- Built sophisticated **share-based accounting system** enabling efficient interest accrual without constant on-chain updates, using continuous compounding with exponential growth.
-- Supports **dual asset lending** (SOL and USDC) with deposits, withdrawals, borrowing, and repayment flows.
-- Integrated **Pyth Network oracle** for real-time price feeds with staleness checks, enabling accurate collateral valuation and liquidation calculations.
-- Implemented **automated liquidation mechanisms** with health factor monitoring, close factor calculations, and liquidation bonus incentives.
-- Features **PDA-based treasury accounts** for secure token management and automated interest accrual on deposits and borrows.
-- Core instructions include: deposit, withdraw, borrow, repay, and liquidate with comprehensive validation and error handling.
-- Interest accrues continuously using exponential compounding formula, ensuring fair and accurate interest calculations for both depositors and borrowers.
-
-#### **WS Swap — Solana Asset Exchange Prototype**  
-> [GitHub Repository](https://github.com/wasif1024/ws-swap) | Token swap protocol with PDA-secured vaults
-
-- Implemented **token swap flows** and conversion logic to explore pricing paths, execution costs, and account modeling on Solana.
-- Built **PDA-secured vaults** to securely hold tokens during swap operations, preventing unauthorized access.
-- Designed **swap offer system** allowing users to create and accept token swap offers for various Solana tokens.
-- Leveraged **Anchor framework** for efficient and secure Solana program development with comprehensive instruction handlers.
-
-#### **WS Vesting — Solana Token Vesting Protocol**
-- Built on-chain vesting schedules with cliff logic and secure token release using PDAs and Token-2022.
+- Built a **Deep Agent** (`create_deep_agent`) that reads quote requests from a sales rep's inbox, prices them from a real database, has the math double-checked, and **drafts the reply for human approval**.
+- Designed **specialist subagents**, each with its own tools, model and memory: a database analyst, an inbox manager (via an **MCP** mail server), and a quote reviewer.
+- Added **human-in-the-loop approvals** for risky actions (adding a customer, saving an email draft) and **skills** — step-by-step playbooks the agent loads on demand.
+- Ran all generated code in a **separate LangSmith sandbox per conversation**, so charts, reports and files never touch the user's machine.
+- Implemented **async subagents**: a background newsletter agent fans out parallel genre researchers (Tavily web search) while the user keeps chatting.
+- **Stack:** Python, LangGraph, LangChain Deep Agents, Claude API, MCP, LangSmith (sandboxes & tracing), TypeScript chat UI.
 
 ---
 
-### 🏢 **Senior Rust Engineer – Astra Tech (Botim Messaging Platform)**
-> High-throughput, real-time messaging backend systems
+## 🚀 Professional Experience
 
-- Contributed to large-scale consumer messaging infrastructure.
-- Designed and implemented **low-latency Rust + gRPC services**, focusing on performance, correctness, and fault tolerance.
-- Built and optimized **event-driven pipelines** for messaging, presence, and system coordination in production.
+### 🧩 **AI Solutions Architect / Agentic AI Architect – Permus Software House ([myndlab.ai](https://myndlab.ai)), Dubai**
+> Jan 2026 – Oct 2026 · Myndlab turns a natural-language prompt into a production-grade, containerized full-stack or mobile app across 10+ technology stacks, with native Arabic support
 
----
-
-### 🛠️ **Senior Rust Engineer – Taif UI Jaud**
-> Consulting & Product Development
-
-- Architected and delivered blockchain and backend systems for international clients, specializing in Rust, Solana, and privacy-preserving protocols.
-- **Designity**: Designed and shipped an Anchor-based Solana program for tamper-evident reviews, with PDA modeling, Node.js APIs, and workflow orchestration.
-- **Hoopas**: Developed and maintained Solana NFT smart contracts using Metaplex; project live on Magic Eden.
+- **Sole architect and engineer** for the platform's agentic AI infrastructure, owning design through production for AI-driven application generation using **Rust, RIG, LLM orchestration** and cloud-native services.
+- Designed **graph-driven, durable workflows** for deterministic, auditable and resumable AI execution.
+- Built **MCP-compatible execution infrastructure** for controlled tool invocation, with explicit state transitions, runtime enforcement and secure execution boundaries.
+- Architected **agent memory and retrieval pipelines** using vector databases and contextual execution.
+- Designed orchestration layers covering **code generation, execution, validation and deployment automation** for generated apps.
+- Designed microservice and event-driven architectures and applied observability practices to improve the reliability, traceability and production readiness of AI workloads.
 
 ---
 
-### ⚡ **Lead Rust Engineer – Invo Technology**
-> Blockchain-integrated application architecture
+### 🏢 **Senior Rust Engineer (Contract) – Astra Tech (Botim Messaging Platform), Dubai**
+> Feb 2025 – Aug 2025
 
-- Designed and implemented a scalable **Rust microservices architecture**.
-- Built high-performance async APIs using **Actix-Web**, with strong focus on reliability and clean architecture.
-- Integrated **Subxt** for off-chain to on-chain interactions with a Substrate-based blockchain.
-- Implemented event-driven pipelines with **Kafka and Redis**, and deployed services via **Docker/Kubernetes on AWS**.
+- Designed **high-throughput Rust and gRPC services** for Botim's large-scale real-time messaging infrastructure.
+- Built **event-driven backend pipelines** handling presence, coordination and messaging flows.
+- Improved performance, reliability and fault tolerance of production services.
 
 ---
 
-## 🛠️ Core Technologies & Expertise
+### 🛠️ **Senior Rust Engineer – Taif Ul Jaud (Consulting & Product Development)**
+> Apr 2023 – Feb 2025
 
-### **Blockchain & Web3**
-- **Solana**: Anchor framework, Token-2022, Light Protocol, compressed NFTs (cNFTs)
-- **Substrate**: Runtime pallets, governance, ISMP
-- **Interoperability**: ISMP + Hyperbridge
-- **Zero-Knowledge Proofs**: Risc0 zkVM, zk-SNARKs, Pinocchio
-- **Confidential Computing**: Arcium MPC
-- **DeFi Protocols**: CDP stablecoins, lending protocols, asset exchanges, oracle integration, liquidation mechanisms
+- **Led a team of 10**, owning architecture, task planning and delivery of Rust backend and Solana systems for international clients.
+- Directed backend API development and workflow orchestration in Rust and Node.js.
+- **Designity**: shipped an Anchor-based Solana program for tamper-evident reviews. **Hoopas**: built Metaplex NFT contracts, launched on Magic Eden.
+
+---
+
+### ⚡ **Lead Rust Engineer – Invo Technology (Remote)**
+> 2022 – 2023
+
+- Designed a scalable **Rust microservices architecture** with async **Actix-Web** APIs for blockchain-integrated systems.
+- Integrated **Subxt** for on-chain/off-chain communication with Substrate networks.
+- Built **Kafka- and Redis-based event pipelines** deployed with Docker and Kubernetes on AWS.
+
+---
+
+### 🦀 **Rust Engineer – FifthTry (Remote)**
+> 2021 – 2022
+
+- Built Rust (Actix-Web) backend services with OAuth authentication (Google, Discord, Telegram).
+
+---
+
+### 🌐 **Earlier Career – Web Application Development**
+> 2010 – 2021
+
+- Senior Web Application Developer – Intagent (2016–2021)
+- Web Application Developer – Brainiacs Technologies (2010–2016)
+
+---
+
+## 💰 Solana DeFi Protocols (Personal Projects, 2025)
+
+Four Anchor programs built in **Rust + Anchor**:
+
+- **[WS Lending](https://github.com/wasif1024/ws-lending)** — over-collateralized lending protocol with interest accrual and liquidations.
+- **[WS Stablecoin](https://github.com/wasif1024/ws-stablecoin)** — SOL-backed CDP stablecoin with oracle-based (Pyth) health factors.
+- **[WS Swap](https://github.com/wasif1024/ws-swap)** — token swap with PDA-secured vaults.
+- **WS Vesting** — PDA-based vesting with cliff logic on Token-2022.
+
+---
+
+## 🛠️ Core Skills
+
+### **AI & Agentic AI**
+Microsoft Foundry • Microsoft Agent Framework • Azure OpenAI • Azure AI Content Safety & Prompt Shields • Azure AI Vision, Speech, Document Intelligence, Translator • Azure AI Search • Magentic Multi-Agent Orchestration • Semantic Kernel • LangGraph • LangChain • RIG • MCP • Claude API • RAG • Multi-Agent Systems • AI Evaluation • AI Guardrails • Responsible AI
 
 ### **Backend & Infrastructure**
-- **Rust**: Tokio, Actix-Web, Subxt, gRPC
-- **Event-driven systems**: Kafka, Redis
-- **Databases**: PostgreSQL, Redis, MySQL
-- **Cloud & DevOps**: Docker, Kubernetes, AWS, GCP
+Rust • Python • FastAPI • Tokio • Axum • Actix-Web • gRPC / Connect RPC • PostgreSQL • Redis • Temporal • Qdrant • Kafka • Microservices • Event-Driven Architecture
+
+### **Cloud & DevOps**
+Microsoft Azure • Microsoft Entra ID • Application Insights • AWS • Docker • Kubernetes • Bicep / Infrastructure as Code • GitHub Actions • CI/CD • OpenTelemetry
+
+### **Blockchain**
+Solana • Anchor • Token-2022 • Metaplex • Substrate • Polkadot SDK • Subxt • Risc0 zkVM • Cross-Chain Interoperability
 
 ---
 
 ## 🎓 Certifications
 
-- **CFA Institute** – Investment Foundations® Certificate
+- **Project Management Professional (PMP®)** — Project Management Institute, 2026
+- **PMI Certified Professional in Managing AI (PMI-CPMAI™)** — Project Management Institute, 2026
+- **Investment Foundations® Certificate** — CFA Institute
 - **Polkadot Blockchain Academy (PBA-X)**, Wave 5
 - **Certified Solana Builder** — HackQuest × Solana Foundation
+
+## 📚 Courses
+
+- **Anthropic (2026):** Claude with the Anthropic API • Introduction to Model Context Protocol (MCP) • Claude Code in Action • Introduction to Agent Skills
 
 ---
 
@@ -141,8 +160,7 @@ Previously, I worked on large-scale real-time messaging systems at Botim, buildi
 - **LinkedIn**: [Wasif Ul Islam Shah](https://www.linkedin.com/in/wasif-shah-13002799/)
 - **GitHub**: [@wasif1024](https://github.com/wasif1024)
 - **Email**: wasif1024@gmail.com
-- **Mobile**: +971(58)-6899257
-- **WhatsApp**: +92(345)-4767257
-- **Telegram**: @wasif1024
+- **WhatsApp**: +92 345 476 7257
+- **Location**: Pakistan
 
-I'm always open to discussing **protocol engineering, DeFi systems, confidential computing, and blockchain infrastructure**. Let's build the future of decentralized finance together. 🚀
+I'm always open to discussing **agentic AI architecture, enterprise AI on Azure, AI governance, and production-grade backend systems**. Let's build something reliable together. 🚀
